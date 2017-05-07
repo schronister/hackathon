@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>car2go Command Center</title>
+    <meta name="description" content="Industry Leading Shipment Management with Real-Time Tracking">
+    <meta name='keywords' content='logistics'>
+    <!-- Use minimum-scale=1 to enable GPU rasterization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrapcyborg.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+
+  <body>
+  <div class="container">
+    <div class="row">
+    <div class="col-xs=12">
+     <h1 style="text-align: center">Austin car2go Command Center</h1>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-9">
+        
+      
+        <div id="map" style="height:400px; width:100%; margin:10px 10px;">
+          
+       
+        </div>
+        <div style=" width: 100%; padding:10px; border:1px solid gray">
+        <h4>Selected Zone</h4>
+        <p>
+        <label for="price-input">Zone Name&nbsp;&nbsp;&nbsp;  </label><input id="name-input" style="width:100px" type="text"/>
+        &nbsp;&nbsp;&nbsp;<label for="price-input">Zone Incentive Level&nbsp;&nbsp;&nbsp;  </label><input id="price-input" style="width:100px" type="number" max="10" min="1"/>
+        </p>
+         <button id="delete-button">Clear This Zone</button>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="row">
+        <div class="col-xs-12">
+        <h4>Rebalancer Team</h4>
+        <div style="max-height:250px; width:100%; overflow: auto">
+        <ul class="rebalancerList" style="height:200px;">
+          <li class="rebalancer" id="rebalancer-0"><i class="fa fa-chevron-right" aria-hidden="true"></i> Nick - <span style="color:red">busy</span></li>
+          <li class="rebalancer" id="rebalancer-1"><i class="fa fa-chevron-right" aria-hidden="true"></i> Max - <span style="color:red">busy</span></li>
+          <li  class="rebalancer" id="rebalancer-2"><i class="fa fa-chevron-right" aria-hidden="true"></i> Greg - <span style="color:red">busy</span></li>
+          <li  class="rebalancer" id="rebalancer-3"><i class="fa fa-chevron-right" aria-hidden="true"></i> Jason - <span style="color:red">busy</span></li>
+          <li class="rebalancer" id="rebalancer-4"><i class="fa fa-chevron-right" aria-hidden="true"></i> Steve - <span style="color:green">available</span></li>
+          <li class="rebalancer" id="rebalancer-5"><i class="fa fa-chevron-right" aria-hidden="true"></i> Mike - <span style="color:red">busy</span></li>
+          <li class="rebalancer" id="rebalancer-6"><i class="fa fa-chevron-right" aria-hidden="true"></i> Karen - <span style="color:green">available</span></li>
+          <li class="rebalancer" id="rebalancer-7"><i class="fa fa-chevron-right" aria-hidden="true"></i> Otter - <span style="color:red">busy</span></li>
+          <li class="rebalancer" id="rebalancer-8"><i class="fa fa-chevron-right" aria-hidden="true"></i> Josh - <span style="color:red">busy</span></li>
+          <li ><a href="#" id="seeAllRebalancers">See All</a></li>
+        </ul>
+
+        </div>
+        </div>
+        </div>
+        <div class="row">
+       <div class="col-xs-12">
+       <h4>Alerts</h4>
+       <div id="alerts" style="height:250px; width:100%; overflow:auto">
+
+       </div>
+       </div>
+        
+        </div>
+      </div>
+    </div>
+   </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWKovOorTxwS61eKzx_YzkFs91_ofMOe4&libraries=drawing,places">
+    </script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js"></script>
+        <script src="./car2go.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+   
+  </body>
+
+</html>

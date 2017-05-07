@@ -1,0 +1,24 @@
+ul.rebalancerList> li{
+	text-decoration: none;
+	list-style: none;
+
+	padding-left:10px;
+
+
+}
+ul.rebalancerList> li:hover{
+	text-decoration: none;
+	list-style: none;
+	background:#431651;
+	cursor:pointer;
+	font-weight:bold;
+	color:white;
+}
+
+ul.rebalancerList{
+	padding-left:0px;
+}
+
+.alertRow{
+	color:red;
+}
